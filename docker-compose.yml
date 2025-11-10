@@ -9,8 +9,8 @@ services:
       HOSTED_ON: "whois-domain-lookup.fincident"
       HOSTED_ON_URL: "https://whois-domain-lookup.fincident.org"
     restart: unless-stopped
-    expose:
-      - "80"
+    ports:
+      - "10001:80"
     networks:
       - dokploy-network
 
