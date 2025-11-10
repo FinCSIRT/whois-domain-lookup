@@ -5,7 +5,7 @@ services:
     environment:
       DEFAULT_EXTENSION: ""
       SITE_PASSWORD: "aG9@jM3!vR5sE*qP8wT2bC6k"
-      BASE: "/whois/"
+      BASE: "/"
       HOSTED_ON: "whois-domain-lookup.fincident"
       HOSTED_ON_URL: "https://whois-domain-lookup.fincident.org"
     restart: unless-stopped
