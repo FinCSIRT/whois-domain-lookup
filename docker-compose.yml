@@ -4,10 +4,16 @@ services:
     image: reg233/whois-domain-lookup:latest
     environment:
       DEFAULT_EXTENSION: ""
-      SITE_PASSWORD: ""
-      BASE: "/"
-      HOSTED_ON: ""
-      HOSTED_ON_URL: ""
+      SITE_PASSWORD: "aG9@jM3!vR5sE*qP8wT2bC6k"
+      BASE: "/whois/"
+      HOSTED_ON: "whois-domain-lookup.fincident"
+      HOSTED_ON_URL: "https://whois-domain-lookup.fincident.org"
     restart: unless-stopped
     ports:
       - "10001:80"
+    networks:
+      - dokploy-network
+
+networks:
+  dokploy-network:
+    external: true
